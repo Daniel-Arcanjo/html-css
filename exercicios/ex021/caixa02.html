@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: lightslategray;
+        margin: 0px;
+      }
+      h1{
+        text-align: center;
+      }
+      p{
+        text-align: justify;
+      }
+      header{
+        border: 1px solid rgb(66, 66, 66);
+        background-color: white;
+        padding: 10px;
+        margin: 20px;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.368);
+      }
+
+      main{
+        border: 2px solid rgb(95, 95, 95);
+        background-color: white;
+        padding: 10px;
+        margin: 10px 10px 5px 10px;
+      }
+      footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+      }
+      article{
+        background-color: rgb(216, 216, 216);
+        padding: 1px;
+      }
+      article > aside{
+        background-color: rgb(167, 167, 167);
+      }
+      nav{
+        background-color: gray;
+        padding: 2px;
+      }
+      nav > a{
+        text-decoration: none;
+        margin-right: 30px;
+        color: white;
+        font-weight: bolder;
+      }
+      nav >a:hover{
+        text-decoration: underline;
+        color: black;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site Exemplo de Caixas</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Assuntos: Test boxes, chuvas intensas e tragédia em JF-MG</p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Chuvas Intensas em Juíz de Fora-MG</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vel cumque nulla perspiciatis consectetur, velit nemo natus molestiae, totam voluptatibus perferendis. Debitis, sed deleniti. Quae, adipisci? Accusantium tenetur repudiandae harum.</p>
+            </article>
+            <article>
+                <h2>Situação dos Moradoes de Juíz de Fora</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor quos omnis, reiciendis odit earum. Quos voluptatibus inventore perferendis, quaerat vero, earum repellendus magni sunt deserunt voluptas porro, commodi tempore.</p>
+                <aside>
+                          <P>Artigo retirado de G1 Globo</P>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Direction by: Daniel Arcanjo Ferreira
+    </footer>
+</body>
+</html>

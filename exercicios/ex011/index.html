@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Teste mídias</h1>
+    <p>Teste de mídia com imagem que se adapta a vários tamanhos de tela</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Teste áudio</h1>
+    <p>Este foi a forma padrão de adicionar áudio, com a tag "audio".</p>
+    <audio src="midias/away.mp3" autoplay controls></audio>
+    <h2>Segundo teste de áudio</h2>
+    <p>Nesse teste foi feito do segunda maneira. Com a tag "audio", depois apaga o "src". E dentro de "audio" você coloca "source src"</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/away.mp3" type="audio/mpeg">
+        <!--Pode adicionar outos formatos para o áudio nessa tag. Primeiro irá tentar por mp3, se não der irá pela seguinte, os formatos são "ogg" e "way".-->
+    </audio>
+</body>
+</html>
