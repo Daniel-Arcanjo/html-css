@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+        width: 500px;
+        border-collapse: collapse;
+        position: relative;
+    }
+
+    caption {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 4px;
+        background-color: gray;
+    }
+
+    thead, tfoot {
+        background-color: rgb(139, 139, 139);
+        color: rgb(255, 255, 255);
+    }
+
+    td, th {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    tbody > tr:nth-child(even) {
+        background-color: lightgray;
+    }
+    tbody > tr:nth-child(odd) {
+        background-color: rgba(0, 0, 0, 0.853);
+        color: white;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: 0;
+        background-color:rgb(139, 139, 139);
+    }
+
+</style>
+<body>
+    <h1>Tabelas grandes</h1>
+    <!--
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        CAPTION (Título)
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+            -->
+            <table>
+                <caption>População das Unidades Federativas do Brasil</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Estado</th>
+                        <th scope="col">População</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td>45 919 049</td>
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td>21 168 791</td>
+                    </tr>
+                    <tr>
+                        <td> Rio de Janeiro</td>
+                        <td>17 223 547</td>
+                    </tr>
+                    <tr>
+                        <td> Bahia</td>
+                        <td>14 870 907</td>
+                    </tr>
+                    <tr>
+                        <td> Paraná</td>
+                        <td>11 890 517</td>
+                    </tr>
+                    <tr>
+                        <td> Rio Grande do Sul</td>
+                        <td>11 233 263</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th scope="row">Total de Habitantes</th>
+                    <td>132 691 098</td>
+                </tfoot>
+            </table>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi similique sapiente illo numquam voluptates beatae ipsa magni nam id, eos facere totam non ratione quo quis sint impedit hic! Numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit modi possimus labore officiis est non delectus vel dicta, a, error quisquam voluptas asperiores, corporis eos tempore molestias perspiciatis tenetur. Alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ex dicta, quaerat, ipsa odio cupiditate in eius qui delectus enim sint amet quo voluptatem officiis omnis recusandae itaque consectetur alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem expedita assumenda libero, nihil tenetur dicta modi dolores voluptate eligendi provident labore facilis accusantium est consectetur quo nisi magni, doloremque animi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi similique sapiente illo numquam voluptates beatae ipsa magni nam id, eos facere totam non ratione quo quis sint impedit hic! Numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit modi possimus labore officiis est non delectus vel dicta, a, error quisquam voluptas asperiores, corporis eos tempore molestias perspiciatis tenetur. Alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ex dicta, quaerat, ipsa odio cupiditate in eius qui delectus enim sint amet quo voluptatem officiis omnis recusandae itaque consectetur alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem expedita assumenda libero, nihil tenetur dicta modi dolores voluptate eligendi provident labore facilis accusantium est consectetur quo nisi magni, doloremque animi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi similique sapiente illo numquam voluptates beatae ipsa magni nam id, eos facere totam non ratione quo quis sint impedit hic! Numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit modi possimus labore officiis est non delectus vel dicta, a, error quisquam voluptas asperiores, corporis eos tempore molestias perspiciatis tenetur. Alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ex dicta, quaerat, ipsa odio cupiditate in eius qui delectus enim sint amet quo voluptatem officiis omnis recusandae itaque consectetur alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem expedita assumenda libero, nihil tenetur dicta modi dolores voluptate eligendi provident labore facilis accusantium est consectetur quo nisi magni, doloremque animi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi similique sapiente illo numquam voluptates beatae ipsa magni nam id, eos facere totam non ratione quo quis sint impedit hic! Numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit modi possimus labore officiis est non delectus vel dicta, a, error quisquam voluptas asperiores, corporis eos tempore molestias perspiciatis tenetur. Alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ex dicta, quaerat, ipsa odio cupiditate in eius qui delectus enim sint amet quo voluptatem officiis omnis recusandae itaque consectetur alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem expedita assumenda libero, nihil tenetur dicta modi dolores voluptate eligendi provident labore facilis accusantium est consectetur quo nisi magni, doloremque animi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi similique sapiente illo numquam voluptates beatae ipsa magni nam id, eos facere totam non ratione quo quis sint impedit hic! Numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit modi possimus labore officiis est non delectus vel dicta, a, error quisquam voluptas asperiores, corporis eos tempore molestias perspiciatis tenetur. Alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ex dicta, quaerat, ipsa odio cupiditate in eius qui delectus enim sint amet quo voluptatem officiis omnis recusandae itaque consectetur alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem expedita assumenda libero, nihil tenetur dicta modi dolores voluptate eligendi provident labore facilis accusantium est consectetur quo nisi magni, doloremque animi.</p>
+</body>
+</html>
