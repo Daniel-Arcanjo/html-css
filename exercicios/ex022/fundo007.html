@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizar Div</title>
+    <style>
+        /* Normalmente coloca eles em id, tipo <section id="container">
+        <article id="conteudo">
+        */
+        section {
+            position: relative;
+            height: 92vh;
+            padding: 20px;
+            background-color: red;
+            background-image: url(imagens/target001.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        article {
+            position: absolute;
+            width: 350px;
+            height: 250px;
+            background-color: yellow;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            left: 50%;
+            top: 50%;
+
+            transform:translate(-50%, -50%)
+            /*COLOCAR VÍRGULA no translate -50%, -50%*/
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+
+        </article>
+    </section>
+</body>
+</html>
