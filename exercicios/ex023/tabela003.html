@@ -19,11 +19,23 @@
                 padding: 8px;
                 border: 2px solid black;
              }
+             .amarelo {
+                background-color: yellow;
+             }
+
+             .black {
+                background-color: black;
+             }
     </STYle>
 </head>
 <body>
     <h1>Mesclagem de Células</h1>
     <table>
+        <colgroup>
+        <col style="background-color: red;">
+        <col class="amarelo">
+        <col class="black">
+        </colgroup>
         <tr>
             <td colspan="3" style="text-align: center;">A</td>
             
@@ -31,12 +43,12 @@
         <tr>
             <td rowspan="2">D</td>
             <td>E</td>
-            <td>F</td>
+            <td style="color: white;">F</td>
         </tr>
         <tr>
            
             <td>H</td>
-            <td rowspan="2">I</td>
+            <td rowspan="2" style="color: white;">I</td>
         </tr>
         <tr>
            
