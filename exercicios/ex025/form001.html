@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!--É muito impostante usar LABEL - Ele vai relacionar o nome e sobrenome com a sua caixa-->
+
+    <!-- TAG= METHOD="post"
+    Método GET e POST, o get é o padrão, os dados aparecem na URL. Já o post não aparece, mas ele aparece no DevTools (aí é preciso usar HTTPS para segunraça máxima do site) -->
+    <style>input#inome {background-color: blue; color: white;}</style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
