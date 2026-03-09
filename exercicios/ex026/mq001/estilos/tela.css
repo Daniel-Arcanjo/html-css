@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: aliceblue;
+}
+
+header > h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+header menu {
+    background-color: rgb(201, 230, 255);
+}
+
+header > menu > ul > li {
+    display: inline-block;
+    padding: 10px;
+}
+
+main article {
+    max-width: 600px;
+    margin: auto;
+}
+
+main > article > h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+main > article > p {
+    text-align: justify;
+    padding-left: 10px;
+}

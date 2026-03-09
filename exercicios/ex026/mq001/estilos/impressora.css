@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100%;
+}
+
+menu {
+    display: none;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+article > p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.3em;
+}
+
+article::after {
+    content: 'Impressão feita no site daniel-arcanjo.github.io';
+}
