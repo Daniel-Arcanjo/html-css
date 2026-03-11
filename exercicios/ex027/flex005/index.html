@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizando</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #b6ddff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+        }
+
+        /* Gustavo não gosta de usar o Display: Flex no Body. Ou seja, ele usa algo como o main ou div e coloca Width e Height 100vh/vw */
+        main {
+            background-color: rgb(111, 188, 255);
+            width: 100vw;
+            height: 100vh;
+
+           /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        section {
+            background-color: rgb(0, 136, 255);
+            height: 300px;
+            width: 300px;
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        aside {
+            background-color: aqua;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="container">
+            <aside>DANIEL</aside>
+        </section>
+    </main>
+</body>
+</html>
