@@ -8,24 +8,37 @@
         div.container {
             display: flex;
             background-color: darkblue;
+            flex-flow: row nowrap;
         }
 
         div.item {
-            flex: auto;
             border: 1px solid black;
             text-align: center;
             background-color: aqua;
+            flex-basis: 250px;
+        }
+
+        div#cxA {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        div#cxB {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#cxC {
+            flex-shrink: 1;
+            flex-grow: 5;
         }
     </style>
 </head>
 <body style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
     </div>
 </body>
 </html>

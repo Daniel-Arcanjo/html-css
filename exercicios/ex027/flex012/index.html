@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible</title>
+    <style>
+        div.container {
+            display: flex;
+            background-color: darkblue;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            border: 1px solid black;
+            padding: 4px;
+            text-align: center;
+            background-color: aqua;
+        }
+
+        div#cxA {
+            flex: auto;
+        }
+
+        div#cxB {
+            flex: 1 1 auto;
+        }
+
+        div#cxC {
+            flex: auto;
+        }
+    </style>
+</head>
+<body style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <div class="container">
+        <div class="item" id="cxA">A ( Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quibusdam suscipit facere repellat, nesciunt nemo sit quos hic veritatis animi voluptatibus cum eveniet debitis consectetur nostrum eos! Vero, explicabo saepe? )</div>
+        <div class="item" id="cxB">B ( Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, labore cumque? Commodi soluta placeat in voluptatem, magnam ad consectetur. Velit iusto eum dignissimos at numquam ea enim aspernatur quibusdam hic! )</div>
+        <div class="item" id="cxC">C ( Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum impedit asperiores expedita odit laboriosam. Similique labore laudantium pariatur, rerum a neque nam, accusantium totam possimus eos vel aperiam consequatur fuga. )</div>
+    </div>
+</body>
+</html>
