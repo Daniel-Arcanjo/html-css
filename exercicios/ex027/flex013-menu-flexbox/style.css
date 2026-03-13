@@ -25,15 +25,17 @@ header h1 {
     color: white;
     padding: 5px;
     flex: 0 0 150px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.299);
 }
 
-header menu {
+menu {
     display: flex;
     flex-flow: row wrap;
 }
 
-header menu a {
+header > menu > a {
     text-decoration: none;
+    text-align: center;
     color: white;
     font-weight: bold;
     padding: 5px;
@@ -47,6 +49,9 @@ header menu a:hover {
     background-color: rgb(239, 239, 239);
     color: black;
     font-weight: bold;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.44);
+    transform: translate(-1px, -1px);
+    transition: transform 0.4s;
 }
 
 main {
@@ -66,3 +71,4 @@ main p {
     margin-top: 10px;
     line-height: 1.3em;
 }
+
