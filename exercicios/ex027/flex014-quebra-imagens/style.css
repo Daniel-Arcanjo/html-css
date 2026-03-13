@@ -29,8 +29,7 @@ section.flex-content {
     color: white;
     padding: 20px;
 
-    display: flex;
-    flex-flow: column nowrap;
+  
 }
 
 article.media-text {
